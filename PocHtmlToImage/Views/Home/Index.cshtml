@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>PoC - HtmlToImage</h1>
+    <p class="lead">PoC - Convert HTML into a image using HtmlRenderer lib</p>
+</div>
+
+<div class="col-md-12">
+    <form action="/Home/GetImageFromHtml" method="post">
+        <div class="row">
+            <div class="form-group">
+                <label>HTML</label>
+                <textarea name="html" rows="10" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
